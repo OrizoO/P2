@@ -2,7 +2,8 @@
     font-family: 'Raleway';
     src: url('Raleway-VariableFont_wght.ttf');
 }
-head {
+
+.header {
     font-family: "Raleway", "Sans serif";
 }
 
@@ -10,5 +11,24 @@ head {
 {
     display: flex;
     justify-content: flex-end;
-    text-align: justify;
+    align-items: baseline;
+    
+}
+
+.searchButton{
+    background-color: #0065FC;
+    Color:white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    cursor: pointer; 
+}
+
+.searchBar{
+    background-color: #ffffff;
+    Color:rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer; 
 }
