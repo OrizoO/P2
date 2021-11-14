@@ -7,22 +7,28 @@
     font-family: "Raleway", "Sans serif";
 }
 
-.nav
-{
+
+.logo {
     display: flex;
-    justify-content: flex-end;
-    align-items: baseline;
-    
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;    
 }
 
 .searchButton{
     background-color: #0065FC;
+    border-radius: 15px;
     Color:white;
     font-weight: bold;
-    padding: 10px 20px;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
+    padding: 10px 5px;
     cursor: pointer; 
+    position: relative;
+    width:12%;
+    height:50%;
+    border-style: none;
 }
 
 .searchBar{
@@ -31,4 +37,26 @@
     font-weight: bold;
     padding: 10px 20px;
     cursor: pointer; 
+    border-style: none;
+}
+
+.geoloc{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    width:9%;
+    height:300%;
+    position: relative;
+    top: 13px; left: 4px;
+}
+
+.filtre {
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.intro{
+    font-size:x-large;
+    display: flex;
+    justify-content: center; 
 }
