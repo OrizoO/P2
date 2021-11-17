@@ -1,33 +1,41 @@
-@font-face {
-    font-family: 'Raleway';
-    src: url('Raleway-VariableFont_wght.ttf');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Raleway", "Sans serif";
 }
 
-.header {
-    font-family: "Raleway", "Sans serif";
-}
+.a:visited {
+    color:#0065FC;
+    }
 
 
 .logo {
     display: flex;
     justify-content: center;
+    height: 55px;
 }
 
 .nav {
     display: flex;
-    justify-content: space-around;    
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0%; 
+    color: #0065FC;
+    text-decoration: none;  
+    text-decoration-style: none;
 }
+
 
 .searchButton{
     background-color: #0065FC;
-    border-radius: 15px;
+    border-radius: 10px;
     Color:white;
     font-weight: bold;
     padding: 10px 5px;
     cursor: pointer; 
     position: relative;
-    width:12%;
-    height:50%;
+    width: 40px;
+    height: 40px;;
     border-style: none;
 }
 
@@ -43,16 +51,17 @@
 .geoloc{
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
-    width:9%;
-    height:300%;
     position: relative;
-    top: 13px; left: 4px;
+    border-style: none;
+    height: 40px;
+    width: 40px;
 }
 
 .filtre {
     border-radius: 30px;
     padding: 10px 20px;
     font-weight: bold;
+    background-color: #ffffff;
 }
 
 .intro{
@@ -60,3 +69,11 @@
     display: flex;
     justify-content: center; 
 }
+
+input::placeholder {
+    color: black;
+  }
+
+
+
+
