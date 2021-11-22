@@ -6,10 +6,10 @@
 }
 
 
-.logo_mobile {
+.logo {
+    height: 55px;
     display: flex;
     justify-content: center;
-    height: 55px;
 }
 
 .nav {
@@ -21,6 +21,12 @@
     text-decoration: none;  
     text-decoration-style: none;
 }
+
+
+a:active {
+  border-bottom: solid #0065FC;
+}
+
 
 .searchButton_desktop{
   display: none;
@@ -92,7 +98,7 @@ input::placeholder {
 }
 
 .iconefiltre {
-  background-color: #808080;
+  background-color: #DEEBFF;
   border-radius: 100%;
   padding: 20px 20px;
 }
@@ -125,10 +131,9 @@ input::placeholder {
     color: #0065FC;
   }
   
-  .navlink{
+  a:active{
     border-top: solid #0065FC;
     padding-top: 4.5rem;
-    transition-duration:1s;
   }
 
   .searchButton_mobile{
@@ -193,7 +198,7 @@ input::placeholder {
   }
   
   .iconefiltre {
-    background-color: #808080;
+    background-color: #DEEBFF;
     border-radius: 100%;
     padding: 20px 20px;
   }
