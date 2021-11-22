@@ -1,61 +1,90 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr"></html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="responsive_mobile.css" />
-        <!--<link rel="stylesheet" href="css/responsive_tablette.css" />-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
-    
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 
-        <title>Booki</title>
-    </head>
-     <body>
-        <header>
-            <div class="logo">
-                <img src="images/Booki.png" alt="Logo">
-            </div>
-            <nav>
-                <ul class="nav">
-                    <li>
-                        <a href="#hébergement">Hébergements</a>
-                    </li>
-                    <li>
-                        <a href="#activité">Activités</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+</html>
 
-        <main>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="responsive_mobile.css" />
+    <!--<link rel="stylesheet" href="css/responsive_tablette.css" />-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+
+
+    <title>Booki</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img class="logo_desktop" src="images/Booki_desktop.png" alt="Logo">
+            <img class="logo_mobile" src="images/Booki_mobile.png" alt="Logo">
+        </div>
+        <nav>
+            <ul class="nav">
+                <li>
+                    <a class="navlink" href="#hébergement">Hébergements</a>
+                </li>
+                <li>
+                    <a class="navlink" href="#activité">Activités</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
             <h1 class="intro">Trouvez votre hébergement pour des vacances de rêves</h1>
             <p>En plein centre ville ou en pleine nature</p>
-            
-            <button type="submit" class="geoloc"><i class="fas fa-map-marker-alt"></i></button>
-            <input class="searchBar" type="search" placeholder="Marseille, France" />
-            <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
-            
-            <section id="filtre">
-            <h1>Filtres</h1>
-            <ul id="icone">
-            <button class="filtre"><li><i class="fas fa-money-bill-wave" aria-hidden="true"></i></li>Economique</button>
-            <button class="filtre"><li><i class="fas fa-child" aria-hidden="true"></i></li>Familial</button>
-            <button class="filtre"><li><i class="fas fa-heart" aria-hidden="true"></i></li>Romantique</button>
-            <button class="filtre"><li><i class="fas fa-dog" aria-hidden="true"></i></li>Animaux autorisés</button>
-            </ul>
-            <p><i class="far fa-info-circle"></i>  Plus de 500 logements sont disponibles dans cette ville</p>
-            </section> 
-            
-            <section id="hébergement">
-                <h1>Hébergements à Marseille</h1>
-            </section>
-            
-            <section id="activité">
-                <h1>Activités à Marseille</h1>
-            </section>
-        </main>
-        <footer>
-            
-        </footer>
-    </body>
+            <div>
+                <button type="submit" class="geoloc"><i class="fas fa-map-marker-alt"></i></button>
+                <input class="searchBar" type="search" placeholder="Marseille, France" />
+                <button type="submit" class="searchButton_desktop">Rechercher</button>
+                <button type="submit" class="searchButton_mobile"><i class="fa fa-search"></i></button>
+            </div>
+        </section>
+        <section id="filtre">
+            <div class="filtre">
+                <h2 class="titrefiltres">Filtres</h2>
+                <div class="contourBoutton">
+                    <div class="iconefiltre">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <span class="titreFiltre">Économique</span>
+                </div>
+                <div class="contourBoutton">
+                    <div class="iconefiltre">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <span class="titreFiltre">Familial</span>
+                </div>
+                <div class="contourBoutton">
+                    <div class="iconefiltre">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <span class="titreFiltre">Romantique</span>
+                </div>
+                <div class="contourBoutton">
+                    <div class="iconefiltre">
+                        <i class="fas fa-dog"></i>
+                    </div>
+                    <span class="titreFiltre">Animaux autorisé</span>
+                </div>
+            </div>
+        </section>
+        <p><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+        <aside id="populaire">
+            <h1>Les plus populaires</h1>
+        </aside>
+        <section id="hébergement">
+            <h1>Hébergements à Marseille</h1>
+        </section>
+
+        <section id="activité">
+            <h1>Activités à Marseille</h1>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
 </html>

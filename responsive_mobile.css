@@ -1,17 +1,12 @@
 @media screen  and  (max-width: 765px)
 {
-    @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
-body {
-  font-family: "Raleway", "Sans serif";
+.logo_desktop{
+  display: none;
 }
 
-.a:visited {
-    color:#0065FC;
-    }
 
-
-.logo {
+.logo_mobile {
     display: flex;
     justify-content: center;
     height: 55px;
@@ -27,8 +22,11 @@ body {
     text-decoration-style: none;
 }
 
+.searchButton_desktop{
+  display: none;
+}
 
-.searchButton{
+.searchButton_mobile{
     background-color: #0065FC;
     border-radius: 10px;
     Color:white;
@@ -70,6 +68,7 @@ body {
     font-size:x-large;
     display: flex;
     justify-content: center; 
+    text-align: center;
 }
 
 input::placeholder {
@@ -77,9 +76,133 @@ input::placeholder {
   }
 
 #icone {
-    background-color: red;
+    color:#0065FC;
+    list-style-type: none;
+}
+
+.titreFiltre{
+  font-weight: bold;
+}
+
+.contourBoutton {
+  display: flex;
+  align-items: center;
+  border: 1px solid #808080;
+  border-radius: 32px;
+}
+
+.iconefiltre {
+  background-color: #808080;
+  border-radius: 100%;
+  padding: 20px 20px;
+}
+
+.fas {
+  color: #0065fc;
 }
 
 
-
 }
+
+@media screen  and  (min-width: 765px){
+   
+  .logo_mobile{
+    display: none;
+  }
+
+
+  .logo_desktop {
+    display: flex;
+    justify-content: start;
+    height: 55px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0%; 
+    color: #0065FC;
+  }
+  
+  .navlink{
+    border-top: solid #0065FC;
+    padding-top: 4.5rem;
+    transition-duration:1s;
+  }
+
+  .searchButton_mobile{
+    display: none;
+  }
+  
+  .searchButton_desktop{
+    background-color: #0065FC;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    Color:white;
+    padding: 15px 15px;
+    font-weight: bold;
+    cursor: pointer; 
+    position: relative;
+    border-style: none;
+  }
+  
+  .searchBar{
+    background-color: #ffffff;
+    Color:rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 15px 20px;
+    cursor: pointer; 
+    border-style: none;
+  }
+  
+  .geoloc{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    position: relative;
+    border-style: none;
+    padding: 15px 15px;
+  }
+  
+  
+  .intro{
+    font-size:x-large;
+    display: flex;
+  }
+  
+  input::placeholder {
+    color: black;
+  }
+  
+   
+  #populaire {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  
+  .titreFiltre{
+    font-weight: bold;
+  }
+  
+  .contourBoutton {
+    display: flex;
+    align-items: center;
+    border: 1px solid #808080;
+    border-radius: 32px;
+  }
+  
+  .iconefiltre {
+    background-color: #808080;
+    border-radius: 100%;
+    padding: 20px 20px;
+  }
+  
+  .fas {
+    color: #0065fc;
+  }
+  
+  .filtre {
+    display: flex;
+    align-items: center;
+  }
