@@ -112,102 +112,219 @@ input::placeholder {
 
 @media screen  and  (min-width: 765px){
    
-  .logo_mobile{
-    display: none;
-  }
+.logo_mobile{
+  display: none;
+}
 
 
-  .logo_desktop {
-    display: flex;
-    justify-content: start;
-    height: 55px;
-  }
+.logo_desktop {
+display: flex;
+justify-content: start;
+height: 55px;
+}
   
-  .nav {
-    display: flex;
-    justify-content: flex-end;
-    list-style-type: none;
-    padding: 0%; 
-    color: #0065FC;
-  }
-  
-  a:active{
-    border-top: solid #0065FC;
-    padding-top: 4.5rem;
-  }
+body {
+margin: 1%;
+}
 
-  .searchButton_mobile{
-    display: none;
-  }
+.nav {
+display: flex;
+justify-content: flex-end;
+grid-area: navbar;
+list-style-type: none;
+position: relative;
+bottom: 30px;
+}
   
-  .searchButton_desktop{
-    background-color: #0065FC;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    Color:white;
-    padding: 15px 15px;
-    font-weight: bold;
-    cursor: pointer; 
-    position: relative;
-    border-style: none;
-  }
+.nav[data-active="true"] {
+border-top: 2px solid #0065FC;
+}
   
-  .searchBar{
-    background-color: #ffffff;
-    Color:rgb(0, 0, 0);
-    font-weight: bold;
-    padding: 15px 20px;
-    cursor: pointer; 
-    border-style: none;
-  }
+.navlink {
+padding: 30px;
+transition-duration: 0.1s;
+border-top: 2px transparent solid;
+}    
+
+a:active{
+border-top: solid #0065FC;
+padding-top: 4.5rem;
+}
+
+.searchButton_mobile{
+display: none;
+}
   
-  .geoloc{
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
-    position: relative;
-    border-style: none;
-    padding: 15px 15px;
-  }
+.searchButton_desktop{
+background-color: #0065FC;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+Color:white;
+padding: 15px 15px;
+font-weight: bold;
+cursor: pointer; 
+position: relative;
+border-style: none;
+}
+  
+.searchBar{
+background-color: #ffffff;
+Color:rgb(0, 0, 0);
+font-weight: bold;
+padding: 15px 20px;
+cursor: pointer; 
+border-style: none;
+}
+  
+.geoloc{
+border-bottom-left-radius: 15px;
+border-top-left-radius: 15px;
+position: relative;
+border-style: none;
+padding: 15px 15px;
+}
   
   
-  .intro{
-    font-size:x-large;
-    display: flex;
-  }
+.intro{
+font-size:x-large;
+display: flex;
+}
   
-  input::placeholder {
-    color: black;
-  }
+input::placeholder {
+color: black;
+}
   
    
-  #populaire {
-    display: flex;
-    justify-content: flex-end;
+#populaire {
+display: flex;
+justify-content: flex-end;
+}
+ 
+.titrefiltres {
+margin-right: 30px;
+margin-top: 50px;
+}
+  
+.titreFiltre{
+font-weight: bold;
+padding-left: 10px;
+padding-right: 20px;
+}
+
+.contourBoutton:hover {
+background: #0065FC;
+cursor: pointer;
+color: white;
   }
   
+.contourBoutton {
+display: flex;
+align-items: center;
+border: 2px solid #808080;
+border-radius: 32px;
+margin-right: 15px;
+margin-top: 35px;
+}
   
-  .titreFiltre{
-    font-weight: bold;
-  }
+.iconefiltre {
+background-color: #DEEBFF;
+border-radius: 100%;
+padding: 20px 20px;
+}
   
-  .contourBoutton {
-    display: flex;
-    align-items: center;
-    border: 1px solid #808080;
-    border-radius: 32px;
-  }
+.fas {
+color: #0065fc;
+}
   
-  .iconefiltre {
-    background-color: #DEEBFF;
-    border-radius: 100%;
-    padding: 20px 20px;
+.filtre {
+display: flex;
+align-items: center;
+}
+
+.TitreHeberg {
+  position: relative;
+  bottom: 20px;
+}
+
+.hebergement {
+background-color: #F2F2F2;
+height: 700px;
+width: 50%;
+border-radius: 20px;
+position: relative;
+bottom: 700px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+
+}
+
+.imgheberg {
+height: 300px;
+object-fit: cover;
+max-width: 100%;
+width: 100%;
+max-height: 100%;
+}
+
+
+
+.Populaires {
+background-color: #F2F2F2;
+height: 700px;
+width: 40%;
+border-radius: 20px;
+position: relative;
+right: 0px;
+}
+
+.hotelPopulaire {
+display: flex;
+width: 100%;
+background: white;
+border-radius: 20px;
+margin-bottom: 10px;
+height: 160px;
+padding: 10px;
+}
+
+.imgPopulaire {
+cursor: pointer;
+float: left;
+background-color: white;
+object-fit: cover;
+height: 90%;
+width: 40%;
+border-radius: 5px;
+}
+
+.hotelHeberg {
+  display: flex;
+  width: 100%;
+  background: white;
+  border-radius: 20px;
+  margin-right: 50px;
+  height: 160px;
+  padding: 10px;
   }
-  
-  .fas {
-    color: #0065fc;
-  }
-  
-  .filtre {
-    display: flex;
-    align-items: center;
-  }
+}
+
+
+h3 {
+  color:black;
+}
+p{
+  color:black
+}
+
+#activité {
+  position: relative;
+  bottom: 700px;
+}
+
+.AfficherPlus{
+  position: relative;
+  top: 200px;
+  right: 400px;
+  font-weight: bold;
+  color:black;
+}
