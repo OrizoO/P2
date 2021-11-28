@@ -23,13 +23,20 @@
 }
 
 
-a:active {
-  border-bottom: solid #0065FC;
-}
+
 
 
 .searchButton_desktop{
   display: none;
+}
+
+.info {
+  text-align: center;
+}
+
+.searchSystem {
+  display: flex;
+  align-items: center;
 }
 
 .searchButton_mobile{
@@ -86,28 +93,123 @@ input::placeholder {
     list-style-type: none;
 }
 
-.titreFiltre{
+.titrefiltres {
+  margin-right: 30px;
+  margin-top: 50px;
+  }
+    
+  .titreFiltre{
   font-weight: bold;
-}
-
-.contourBoutton {
+  padding-left: 10px;
+  padding-right: 20px;
+  }
+  
+  .contourBoutton:hover {
+  background: #0065FC;
+  cursor: pointer;
+  color: white;
+    }
+    
+  .contourBoutton {
   display: flex;
   align-items: center;
-  border: 1px solid #808080;
+  border: 2px solid #808080;
   border-radius: 32px;
-}
+  margin-right: 15px;
+  margin-top: 35px;
+  min-width: 40%;
+  max-width: 40%;
+  }
 
-.iconefiltre {
+.contourBouttonFam:hover {
+background: #0065FC;
+cursor: pointer;
+color: white;
+}
+ 
+.contourBouttonFam{
+  border: 2px solid #808080;
+  border-radius: 32px;
+  margin-right: 15px;
+  margin-top: 35px;
+  min-width: 40%;
+  max-width: 40%;
+  position: absolute;
+  margin-left: 50%;
+  display: flex;
+  justify-content: left;
+}  
+
+.titreFiltreFam {
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 20px;
+  align-items: center; 
+  position: relative;
+  top: 20px;
+}
+  .iconefiltre {
   background-color: #DEEBFF;
   border-radius: 100%;
   padding: 20px 20px;
-}
+  }
 
 .fas {
   color: #0065fc;
 }
 
+.Populaires {
+  background-color: #F2F2F2;
+  height: 650px;
+  width: 100%;
+  
+  }
 
+.hotelPopulaire {
+display: flex;
+width: 80%;
+background: white;
+border-radius: 20px;
+margin-bottom: 20px;
+height: 160px;
+padding: 10px;
+margin-left: 5%;
+}
+
+
+
+.imgPopulaire {
+cursor: pointer;
+float: left;
+background-color: white;
+object-fit: cover;
+height: 90%;
+width: 40%;
+border-radius: 5px;
+}
+
+.hebergement {
+height: 750px;
+width: 100%;
+position: relative;
+top: 10px;
+}
+       
+.hotelHeberg {
+width: 60%;
+background: white;
+border-radius: 20px;
+margin-right: 50px;
+height: 160px;
+padding: 10px;
+}
+    }
+
+
+#activité {
+  position: relative;
+  top: 350px;
+  margin-right: 0%;
 }
 
 @media screen  and  (min-width: 765px){
@@ -146,10 +248,7 @@ transition-duration: 0.1s;
 border-top: 2px transparent solid;
 }    
 
-a:active{
-border-top: solid #0065FC;
-padding-top: 4.5rem;
-}
+
 
 .searchButton_mobile{
 display: none;
@@ -211,6 +310,12 @@ padding-left: 10px;
 padding-right: 20px;
 }
 
+.titreFiltreFam {
+font-weight: bold;
+padding-left: 10px;
+padding-right: 20px;
+}
+
 .contourBoutton:hover {
 background: #0065FC;
 cursor: pointer;
@@ -224,6 +329,21 @@ border: 2px solid #808080;
 border-radius: 32px;
 margin-right: 15px;
 margin-top: 35px;
+}
+
+.contourBouttonFam:hover {
+background: #0065FC;
+cursor: pointer;
+color: white;
+}
+
+.contourBouttonFam {
+display: flex;
+align-items: center;
+border: 2px solid #808080;
+border-radius: 32px;
+margin-right: 15px;
+margin-top: 35px; 
 }
   
 .iconefiltre {
@@ -248,13 +368,14 @@ align-items: center;
 
 .hebergement {
 background-color: #F2F2F2;
-height: 700px;
-width: 50%;
+height: 750px;
+width: 70%;
 border-radius: 20px;
 position: relative;
 bottom: 700px;
-display: grid;
-grid-template-columns: repeat(3, 1fr);
+display: flex;
+flex-wrap: wrap;
+
 
 }
 
@@ -271,7 +392,7 @@ max-height: 100%;
 .Populaires {
 background-color: #F2F2F2;
 height: 700px;
-width: 40%;
+width: 30%;
 border-radius: 20px;
 position: relative;
 right: 0px;
@@ -279,12 +400,14 @@ right: 0px;
 
 .hotelPopulaire {
 display: flex;
-width: 100%;
+width: 60%;
 background: white;
 border-radius: 20px;
 margin-bottom: 10px;
 height: 160px;
 padding: 10px;
+margin-top: 3%;
+margin-left: 10%;
 }
 
 .imgPopulaire {
@@ -299,12 +422,14 @@ border-radius: 5px;
 
 .hotelHeberg {
   display: flex;
-  width: 100%;
+  justify-content: center;
+  width: 33%;
   background: white;
   border-radius: 20px;
   margin-right: 50px;
   height: 160px;
   padding: 10px;
+  margin-top: 2%;
   }
 }
 
@@ -323,7 +448,7 @@ p{
 
 .AfficherPlus{
   position: relative;
-  top: 200px;
+  top: 225px;
   right: 400px;
   font-weight: bold;
   color:black;
