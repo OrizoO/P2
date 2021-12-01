@@ -208,8 +208,7 @@ padding: 10px;
 
 #activité {
   position: relative;
-  top: 350px;
-  margin-right: 0%;
+  bottom: 800px;
 }
 
 @media screen  and  (min-width: 765px){
@@ -226,7 +225,8 @@ height: 55px;
 }
   
 body {
-margin: 1%;
+margin-left: 20%;
+margin-right: 20%;
 }
 
 .nav {
@@ -363,29 +363,25 @@ align-items: center;
 
 .TitreHeberg {
   position: relative;
-  bottom: 20px;
+  bottom: 670px;
 }
+
+
 
 .hebergement {
 background-color: #F2F2F2;
-height: 750px;
-width: 70%;
+height: 900px;
+width: 65%;
 border-radius: 20px;
 position: relative;
 bottom: 700px;
 display: flex;
 flex-wrap: wrap;
-
+justify-content: center;
+align-items: center;
 
 }
 
-.imgheberg {
-height: 300px;
-object-fit: cover;
-max-width: 100%;
-width: 100%;
-max-height: 100%;
-}
 
 
 
@@ -410,27 +406,38 @@ margin-top: 3%;
 margin-left: 10%;
 }
 
-.imgPopulaire {
+.imgPopulaire{
+  cursor: pointer;
+  float: left;
+  background-color: white;
+  object-fit: cover;
+  height: 90%;
+  width: 40%;
+  border-radius: 5px;
+  
+}
+
+.imgHeberg {
 cursor: pointer;
-float: left;
+float: top;
 background-color: white;
 object-fit: cover;
-height: 90%;
-width: 40%;
-border-radius: 5px;
+height: 60%;
+width: 100%;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+
 }
 
 .hotelHeberg {
-  display: flex;
-  justify-content: center;
-  width: 33%;
-  background: white;
-  border-radius: 20px;
-  margin-right: 50px;
-  height: 160px;
-  padding: 10px;
-  margin-top: 2%;
-  }
+width: 25%;
+background: white;
+border-radius: 20px;
+margin-right: 60px;
+height: 300px;
+padding: 7px;
+margin-top: 0%;
+
 }
 
 
@@ -448,8 +455,16 @@ p{
 
 .AfficherPlus{
   position: relative;
-  top: 225px;
-  right: 400px;
+  right: 430px;
   font-weight: bold;
   color:black;
+}
+
+
+
+
+.vignetteActivite {
+  width: 20%;
+}
+
 }
