@@ -1,6 +1,14 @@
 @media screen  and  (max-width: 765px)
 {
 
+
+h3 {
+color:black;
+}
+p{
+color:black
+}
+  
 .logo_desktop{
   display: none;
 }
@@ -193,26 +201,80 @@ height: 750px;
 width: 100%;
 position: relative;
 top: 10px;
+display: flex;
+flex-direction: column;
+row-gap: 10px;
+
 }
        
 .hotelHeberg {
-width: 60%;
+width: 95%;
 background: white;
 border-radius: 20px;
 margin-right: 50px;
-height: 160px;
+height: 275px;
 padding: 10px;
+box-shadow: 0 0 20px #000000;
 }
-    }
 
+.imgHeberg {
+cursor: pointer;
+float: top;
+background-color: white;
+object-fit: cover;
+height: 60%;
+width: 100%;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.VignetteActivité1, .VignetteActivité2, .VignetteActivité3, .VignetteActivité4, .VignetteActivité5, .VignetteActivité6   {
+  width: 95%;
+  background: white;
+  border-radius: 20px;
+  margin-right: 50px;
+  height: 275px;
+  box-shadow: 0 0 20px #000000;
+  }
+
+.imgActivité1, .imgActivité2, .imgActivité3, .imgActivité4, .imgActivité5, .imgActivité6 {
+  cursor: pointer;
+  float: top;
+  background-color: white;
+  object-fit: cover;
+  height: 80%;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px; 
+}
+
+.nomActivité1,.nomActivité2,.nomActivité3,.nomActivité4,.nomActivité5,.nomActivité6 {
+color: black;
+
+}
+
+.Vignettes {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
 
 #activité {
   position: relative;
-  bottom: 800px;
+  top: 1100px ;
+  
+
+}
 }
 
 @media screen  and  (min-width: 765px){
-   
+
+body {
+  margin-left: 5%;
+  margin-right: 5%;
+}  
+
+
 .logo_mobile{
   display: none;
 }
@@ -224,10 +286,7 @@ justify-content: start;
 height: 55px;
 }
   
-body {
-margin-left: 20%;
-margin-right: 20%;
-}
+
 
 .nav {
 display: flex;
@@ -363,18 +422,24 @@ align-items: center;
 
 .TitreHeberg {
   position: relative;
-  bottom: 670px;
+  bottom: ;
 }
 
-
-
-.hebergement {
+#hébergement {
 background-color: #F2F2F2;
-height: 900px;
-width: 65%;
-border-radius: 20px;
 position: relative;
 bottom: 700px;
+width: 70%;
+border-radius: 20px;
+height: 800px;
+
+}
+
+.hebergement {
+
+height: 800px;
+width: 65%;
+position: relative;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -387,11 +452,9 @@ align-items: center;
 
 .Populaires {
 background-color: #F2F2F2;
-height: 700px;
-width: 30%;
+height: 800px;
+width: 25%;
 border-radius: 20px;
-position: relative;
-right: 0px;
 }
 
 .hotelPopulaire {
@@ -436,7 +499,6 @@ border-radius: 20px;
 margin-right: 60px;
 height: 300px;
 padding: 7px;
-margin-top: 0%;
 
 }
 
@@ -460,11 +522,161 @@ p{
   color:black;
 }
 
+.Vignettes {
+  display: flex;
+  
+}
 
-
-
-.vignetteActivite {
+.VignetteActivité1 {
+  width: 95%;
+  background: white;
+  border-radius: 20px;
+  margin-right: 50px;
+  height: 600px;
   width: 20%;
+  box-shadow: 0 0 20px #000000;
+  
+  }
+
+.imgActivité1 {
+  cursor: pointer;
+  float: top;
+  background-color: white;
+  object-fit: cover;
+  height: 90%;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px; 
+}
+
+.nomActivité1 {
+color: black;
+}
+
+
+.VignetteActivité2 {
+  width: 95%;
+  background: white;
+  border-radius: 20px;
+  margin-right: 50px;
+  height: 300px;
+  width: 20%;
+  box-shadow: 0 0 20px #000000;
+  }
+
+.imgActivité2 {
+  cursor: pointer;
+  float: top;
+  background-color: white;
+  object-fit: cover;
+  height: 85%;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px; 
+}
+
+.nomActivité2 {
+color: black;
+}
+
+.VignetteActivité3 {
+  width: 95%;
+  background: white;
+  border-radius: 20px;
+  margin-right: 50px;
+  height: 200px;
+  width: 20%;
+  box-shadow: 0 0 20px #000000;
+  }
+
+.imgActivité3 {
+  cursor: pointer;
+  float: top;
+  background-color: white;
+  object-fit: cover;
+  height: 75%;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px; 
+}
+
+.nomActivité3 {
+color: black;
+}
+
+.VignetteActivité4 {
+  width: 95%;
+  background: white;
+  border-radius: 20px;
+  margin-right: 50px;
+  height: 600px;
+  width: 20%;
+  box-shadow: 0 0 20px #000000;
+  }
+
+.imgActivité4 {
+  cursor: pointer;
+  float: top;
+  background-color: white;
+  object-fit: cover;
+  height: 90%;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px; 
+}
+
+
+
+.VignetteActivité5 {
+  width: 95%;
+  background: white;
+  border-radius: 20px;
+  margin-right: 50px;
+  height: 300px;
+  width: 20%;
+  box-shadow: 0 0 20px #000000;
+  }
+
+.imgActivité5 {
+  cursor: pointer;
+  float: top;
+  background-color: white;
+  object-fit: cover;
+  height: 82%;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px; 
+}
+
+.nomActivité5 {
+color: black;
+
+}
+
+.VignetteActivité6 {
+  width: 95%;
+  background: white;
+  border-radius: 20px;
+  margin-right: 50px;
+  height: 300px;
+  width: 20%;
+  box-shadow: 0 0 20px #000000;
+  }
+
+.imgActivité6 {
+  cursor: pointer;
+  float: top;
+  background-color: white;
+  object-fit: cover;
+  height: 82%;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px; 
+}
+
+.nomActivité6 {
+color: black;
+
 }
 
 }
