@@ -285,7 +285,7 @@ aside{
     float: left;
     background-color: white;
     object-fit: cover;
-    height: 90%;
+    height: 100%;
     width: 40%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
