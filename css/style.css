@@ -1,9 +1,492 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
+
+/*Genéral*/ 
+
+
 body {
-  font-family: "Raleway", "Sans serif";
+    font-family: "Raleway", "Sans serif";
+}
+
+main, header{
+    margin-left: 5%;
+    margin-right: 5%;
 }
 a{
     text-decoration:none;
     color:#0065FC;
+}
+
+.fas {
+    color: #0065fc;
+}
+
+
+h3 {
+    color:black;
+}
+
+p{
+    color:black
+}
+
+/*Header + Nav Link*/
+
+
+.logo_mobile{
+    display: none;
+  }
+  
+  
+.logo_desktop {
+    display: flex;
+    justify-content: start;
+    height: 55px;
+  }
+    
+  
+  
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    grid-area: navbar;
+    list-style-type: none;
+    position: relative;
+    bottom: 30px;
+  }
+    
+.nav[data-active="true"] {
+    border-top: 2px solid #0065FC;
+}
+    
+.navlink {
+    padding: 30px;
+    transition-duration: 0.1s;
+    border-top: 2px transparent solid;
+}    
+  
+
+/* Intro + Recherche*/  
+
+.searchButton_mobile{
+    display: none;
+}
+      
+.searchButton_desktop{
+    background-color: #0065FC;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    Color:white;
+    padding: 15px 15px;
+    font-weight: bold;
+    cursor: pointer; 
+    position: relative;
+    border-style: none;
+}
+     
+.searchBar{
+    background-color: #ffffff;
+    Color:rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 15px 20px;
+    cursor: pointer; 
+    border-style: none;
+}
+      
+.geoloc{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    position: relative;
+    border-style: none;
+    padding: 15px 15px;
+}
+      
+      
+.intro{
+    font-size:x-large;
+    display: flex;
+}
+      
+input::placeholder {
+    color: black;
+}
+
+/*  Filtres */    
+
+.titrefiltres {
+    margin-right: 30px;
+    margin-top: 50px;
+}
+      
+.titreFiltre{
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+    
+.titreFiltreFam {
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+    
+.contourBoutton:hover {
+    background: #0065FC;
+    cursor: pointer;
+    color: white;
+}
+     
+.contourBoutton {
+    display: flex;
+    align-items: center;
+    border: 2px solid #808080;
+    border-radius: 32px;
+    margin-right: 15px;
+    margin-top: 35px;
+}
+    
+.contourBouttonFam:hover {
+    background: #0065FC;
+    cursor: pointer;
+    color: white;   
+}
+    
+.contourBouttonFam {
+    display: flex;
+    align-items: center;
+    border: 2px solid #808080;
+    border-radius: 32px;
+    margin-right: 15px;
+    margin-top: 35px; 
+}
+      
+.iconefiltre {
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    padding: 20px 20px;
+}
+      
+    
+.filtre {
+    display: flex;
+    align-items: center;
+}
+  
+
+/*  Hébergement Container*/
+
+.hebergement_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.AfficherPlus{
+    position: relative;
+    right: 430px;
+    font-weight: bold;
+    color:black;
+}
+
+
+/*  Hébergement à Marseille */
+
+.TitreHeberg {
+    position: relative;
+  }
+  
+#hébergement {
+    background-color: #F2F2F2;
+    width: 70%;
+    border-radius: 20px;
+    height: 800px;
+}
+  
+.hebergement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    margin-left: 50px;     
+}
+
+.hotelHeberg {
+    width: 25%;
+    background: white;
+    border-radius: 20px;
+    margin-right: 60px;
+    height: 300px;
+    padding: 7px;
+    margin-bottom: 10px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.15);
+    transition-duration: 1s;
+}
+
+  
+.imgHeberg {
+    cursor: pointer;
+    float: top;
+    background-color: white;
+    object-fit: cover;
+    height: 60%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+    
+    
+/*  Les plus Populaires */
+
+aside{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(242, 242, 242);
+    border-radius: 20px;
+    width: 29%;
+   
+}
+.TitrePopulaire{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#populaire {
+    display: flex;
+    flex-direction: column;
+} 
+  
+.Populaires {
+    background-color: #F2F2F2;
+    height: 800px;
+    width: 25%;
+    border-radius: 20px;
+}
+  
+.hotelPopulaire {
+    display: flex;
+    width: 75%;
+    height: 200px;
+    background: white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 6px;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.15);
+    transition-duration: 1s;
+}
+  
+.imgPopulaire{
+    cursor: pointer;
+    float: left;
+    background-color: white;
+    object-fit: cover;
+    height: 90%;
+    width: 40%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-right: 10px;    
+}
+  
+.fa-chart-line {
+    color: #000000;
+    position: relative;
+    left: 130px;
+}
+
+
+
+ 
+  
+/*  Activité */
+
+#activité {
+    margin-bottom: 50px;
+}
+
+.Vignettes {
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+}
+
+.nomActivité1, .nomActivité2, .nomActivité3, .nomActivité4, .nomActivité5, .nomActivité6 {
+    padding-left: 15px;
+}
+  
+.VignetteActivité1 {
+    width: 20%;
+    background: white;
+    border-radius: 20px;
+    height: 600px;
+    box-shadow: 0 0 20px #000000;
+}
+
+.colonneDouble{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: space-evenly;
+}
+.imgActivité1 {
+    cursor: pointer;
+    float: top;
+    background-color: white;
+    object-fit: cover;
+    height: 90%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+    
+}
+  
+.nomActivité1 {
+    color: black;
+}
+ 
+  
+.VignetteActivité2 {
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    height: 300px;
+    box-shadow: 0 0 20px #000000;
+}
+  
+.imgActivité2 {
+    cursor: pointer;
+    float: top;
+    background-color: white;
+    object-fit: cover;
+    height: 85%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+}
+  
+.nomActivité2 {
+    color: black;
+}
+  
+.VignetteActivité3 {
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    height: 200px;
+    box-shadow: 0 0 20px #000000;
+}
+  
+.imgActivité3 {
+    cursor: pointer;
+    float: top;
+    background-color: white;
+    object-fit: cover;
+    height: 75%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+  }
+  
+.nomActivité3 {
+  color: black;
+  }
+  
+.VignetteActivité4 {
+    width: 20%;
+    background: white;
+    border-radius: 20px;
+    height: 600px;
+    box-shadow: 0 0 20px #000000;
+    }
+  
+.imgActivité4 {
+    cursor: pointer;
+    float: top;
+    background-color: white;
+    object-fit: cover;
+    height: 90%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+  }
+  
+  
+  
+.VignetteActivité5 {
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    height: 300px;
+    box-shadow: 0 0 20px #000000;
+    }
+  
+.imgActivité5 {
+    cursor: pointer;
+    float: top;
+    background-color: white;
+    object-fit: cover;
+    height: 82%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+  }
+  
+.nomActivité5 {
+  color: black;
+  
+  }
+  
+.VignetteActivité6 {
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    height: 300px;
+    box-shadow: 0 0 20px #000000;
+    }
+  
+.imgActivité6 {
+    cursor: pointer;
+    float: top;
+    background-color: white;
+    object-fit: cover;
+    height: 82%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+  }
+  
+.nomActivité6 {
+    color: black;
+  
+  
+  }
+  
+
+/*  Footer */
+
+footer {
+    background-color:#F2F2F2;
+    padding-top: 40px;
+    padding-left: 60px;
+    display: flex;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+
+footer .colonneFooter ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+footer .colonneFooter ul li a {
+    text-decoration: none;
+    line-height: 30px;
+    color: black;
+}
+.colonneFooter {
+    width: 30%;
 }
