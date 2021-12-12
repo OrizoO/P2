@@ -44,26 +44,37 @@ p{
     height: 55px;
   }
     
-  
-  
+
+
+
+header nav ul li {
+    padding: 50px 25px;
+    border-top: 2px solid transparent;
+}
+
+header nav ul li:hover {
+    border-color: #0065FC;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+header nav ul li:hover a {
+    color:#0065FC;
+}
+
+
+
 .nav {
     display: flex;
     justify-content: flex-end;
-    grid-area: navbar;
     list-style-type: none;
-    position: relative;
-    bottom: 30px;
+    margin-top: -63px;
   }
-    
-.nav[data-active="true"] {
-    border-top: 2px solid #0065FC;
-}
-    
-.navlink {
-    padding: 30px;
-    transition-duration: 0.1s;
-    border-top: 2px transparent solid;
-}    
+
+
   
 
 /* Intro + Recherche*/  
@@ -173,6 +184,25 @@ input::placeholder {
 }
   
 
+/*  Info  */
+
+.info .fas.fa-info {
+    color: #0065FC;
+    border-radius: 100%;
+    border: 1px solid #808080;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.info {
+    display: flex;
+}
+
 /*  Hébergement Container*/
 
 .hebergement_container{
@@ -183,36 +213,42 @@ input::placeholder {
 }
 
 .AfficherPlus{
-    position: relative;
-    right: 430px;
     font-weight: bold;
     color:black;
+    margin-left: 3.5%;
 }
 
 
 /*  Hébergement à Marseille */
 
 .TitreHeberg {
-    position: relative;
+    margin-left: 3.5%;
+    margin-top: 2.5%;
   }
   
 #hébergement {
     background-color: #F2F2F2;
     width: 70%;
     border-radius: 20px;
-    height: 800px;
+    height: 830px;
 }
   
 .hebergement {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-bottom: 10px;
+    justify-content: space-between;
+    padding-bottom: 30px;
     margin-left: 50px;     
 }
 
+.contenueArticle {
+    padding-left: 10px;
+    position: relative;
+    bottom: 15px;
+}
+
 .hotelHeberg {
-    width: 25%;
+    width: 28%;
     background: white;
     border-radius: 20px;
     margin-right: 60px;
@@ -226,10 +262,9 @@ input::placeholder {
   
 .imgHeberg {
     cursor: pointer;
-    float: top;
     background-color: white;
     object-fit: cover;
-    height: 60%;
+    height: 67%;
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -251,13 +286,22 @@ aside{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: -47%;
+    margin-top: 3%;
 }
 
 #populaire {
     display: flex;
     flex-direction: column;
 } 
-  
+
+.hebergPopulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -8%;
+}
+
 .Populaires {
     background-color: #F2F2F2;
     height: 800px;
@@ -267,15 +311,12 @@ aside{
   
 .hotelPopulaire {
     display: flex;
-    width: 75%;
-    height: 200px;
+    width: 100%;
+    height: 180px;
     background: white;
     border-radius: 20px;
-    margin-bottom: 10px;
     padding: 6px;
-    margin-top: 3%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-top: 10%;
     box-shadow: 0 10px 10px rgba(0,0,0,0.15);
     transition-duration: 1s;
 }
@@ -294,10 +335,8 @@ aside{
   
 .fa-chart-line {
     color: #000000;
-    position: relative;
-    left: 130px;
+    font-size: xx-large;
 }
-
 
 
  
@@ -319,22 +358,27 @@ aside{
 }
   
 .VignetteActivité1 {
-    width: 20%;
+    width: 100%;
     background: white;
     border-radius: 20px;
     height: 600px;
-    box-shadow: 0 0 20px #000000;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.15);
 }
 
 .colonneDouble{
     display: flex;
     flex-direction: column;
-    width: 20%;
-    justify-content: space-evenly;
+    width: 23%;
+    justify-content: space-between;
+
+
+}
+
+.colonne {
+    width: 23%;
 }
 .imgActivité1 {
     cursor: pointer;
-    float: top;
     background-color: white;
     object-fit: cover;
     height: 90%;
@@ -353,13 +397,12 @@ aside{
     width: 100%;
     background: white;
     border-radius: 20px;
-    height: 300px;
-    box-shadow: 0 0 20px #000000;
+    height: 48%;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.15);
 }
   
 .imgActivité2 {
     cursor: pointer;
-    float: top;
     background-color: white;
     object-fit: cover;
     height: 85%;
@@ -376,13 +419,12 @@ aside{
     width: 100%;
     background: white;
     border-radius: 20px;
-    height: 200px;
-    box-shadow: 0 0 20px #000000;
+    height: 48%;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.15);
 }
   
 .imgActivité3 {
     cursor: pointer;
-    float: top;
     background-color: white;
     object-fit: cover;
     height: 75%;
@@ -396,16 +438,15 @@ aside{
   }
   
 .VignetteActivité4 {
-    width: 20%;
+    width: 100%;
     background: white;
     border-radius: 20px;
     height: 600px;
-    box-shadow: 0 0 20px #000000;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.15);
     }
   
 .imgActivité4 {
     cursor: pointer;
-    float: top;
     background-color: white;
     object-fit: cover;
     height: 90%;
@@ -420,13 +461,12 @@ aside{
     width: 100%;
     background: white;
     border-radius: 20px;
-    height: 300px;
-    box-shadow: 0 0 20px #000000;
+    height: 48%;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.15);
     }
   
 .imgActivité5 {
     cursor: pointer;
-    float: top;
     background-color: white;
     object-fit: cover;
     height: 82%;
@@ -444,13 +484,12 @@ aside{
     width: 100%;
     background: white;
     border-radius: 20px;
-    height: 300px;
-    box-shadow: 0 0 20px #000000;
+    height: 48%;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.15);
     }
   
 .imgActivité6 {
     cursor: pointer;
-    float: top;
     background-color: white;
     object-fit: cover;
     height: 82%;
@@ -490,3 +529,13 @@ footer .colonneFooter ul li a {
 .colonneFooter {
     width: 30%;
 }
+
+
+
+
+
+
+
+
+
+
