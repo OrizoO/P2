@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
-
 /*Genéral*/ 
 
 
@@ -230,12 +229,12 @@ input::placeholder {
 }
 
 
-
-
 .AfficherPlus{
     font-weight: bold;
     color:black;
     margin-left: 3.5%;
+    position: relative;
+    bottom: 30px;
 }
 
 .fa-star.grey {
@@ -256,7 +255,7 @@ input::placeholder {
     background-color: #F2F2F2;
     width: 70%;
     border-radius: 20px;
-    height: 830px;
+    height: auto;
 }
   
 .hebergement {
@@ -280,7 +279,7 @@ input::placeholder {
     margin-right: 60px;
     height: 300px;
     padding: 7px;
-    margin-bottom: 10px;
+    margin-bottom: 35px;
     box-shadow: 0 10px 10px rgba(0,0,0,0.15);
 }
 
@@ -314,6 +313,7 @@ aside{
     display: flex;
     justify-content: space-between;
     width: 90%;
+    margin-top: 5.5%;
 }
 
 .iconeChart {
@@ -342,7 +342,7 @@ aside{
   
 .hotelPopulaire {
     display: flex;
-    width: 100%;
+    width: 92%;
     height: 180px;
     background: white;
     border-radius: 20px;
@@ -363,12 +363,20 @@ aside{
     width: 35%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    padding-right: 10px;    
+    padding-right: 26px;    
+}
+
+.NotationPopulaire {
+    padding: 42px;
 }
   
 .fa-chart-line {
     color: #000000;
     font-size: xx-large;
+}
+
+.contenueArticlePop {
+    margin-right: 130px;
 }
 
 
@@ -397,13 +405,7 @@ aside{
     padding-left: 15px;
 }
   
-.VignetteActivité1 {
-    width: 100%;
-    background: white;
-    border-radius: 20px;
-    height: 700px;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.15);
-}
+
 
 .colonneDouble{
     display: flex;
@@ -415,9 +417,17 @@ aside{
 }
 
 .colonne {
-    width: 23%;
+    width: 21%;
 }
-.imgActivité1 {
+
+.VignetteActivité1, .VignetteActivité4 {
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    height: 700px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.15);
+}
+.imgActivité1,.imgActivité4  {
     cursor: pointer;
     background-color: white;
     object-fit: cover;
@@ -427,12 +437,7 @@ aside{
     border-top-right-radius: 20px; 
     
 }
-  
-.nomActivité1 {
-    color: black;
-}
  
-  
 .VignetteActivité2 {
     width: 100%;
     background: white;
@@ -449,10 +454,6 @@ aside{
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px; 
-}
-  
-.nomActivité2 {
-    color: black;
 }
   
 .VignetteActivité3 {
@@ -473,27 +474,8 @@ aside{
     border-top-right-radius: 20px; 
   }
   
-.nomActivité3 {
-  color: black;
-  }
-  
-.VignetteActivité4 {
-    width: 100%;
-    background: white;
-    border-radius: 20px;
-    height: 700px;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.15);
-    }
-  
-.imgActivité4 {
-    cursor: pointer;
-    background-color: white;
-    object-fit: cover;
-    height: 90%;
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px; 
-  }
+
+
   
   
   
@@ -515,10 +497,7 @@ aside{
     border-top-right-radius: 20px; 
   }
   
-.nomActivité5 {
-  color: black;
-  
-  }
+
   
 .VignetteActivité6 {
     width: 100%;
@@ -538,11 +517,7 @@ aside{
     border-top-right-radius: 20px; 
   }
   
-.nomActivité6 {
-    color: black;
-  
-  
-  }
+
   
 
 /*  Footer */

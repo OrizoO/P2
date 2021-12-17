@@ -1,12 +1,14 @@
-
-
-@media screen and ((min-width: 765px)) and (max-width: 992px) 
+@media screen and (min-width: 769px) and (max-width: 992px) 
 
 {
+
+/* Général */
 
 main {
     margin: 0px;
 }
+
+/*  Hébergement container */
 
 
 
@@ -14,18 +16,14 @@ main {
     flex-direction: column-reverse;
     row-gap: 20px;
 }
+
+/*  Hébergement à Marseille */
+
 .hebergement {
     margin: 0px;
     justify-content: space-around;
 }
 
-.iconeChart {
-    right: 3%;
-}
-
-.TitrePopulaire {
-    margin-bottom: 10%;
-}
 #hébergement {
     width: 100%;
     height: 785px;
@@ -35,6 +33,17 @@ main {
     width: 25%;
     margin-right: 0px;
     margin-bottom: 15px;
+}
+
+
+/*  Les plus populaires */
+
+.iconeChart {
+    right: 3%;
+}
+
+.TitrePopulaire {
+    margin-bottom: 10%;
 }
 
 .hotelPopulaire {
@@ -67,11 +76,12 @@ aside {
     padding-left: 10px;
     position: relative;
     bottom: 15px;
+    margin: 0;
 }
 
-
-
-
+.NotationPopulaire {
+    padding: 0px;
+}
 
 
 /*Activité */

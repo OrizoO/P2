@@ -34,7 +34,7 @@ header nav ul li {
   justify-content: space-around;
   padding: 0%; 
   color: #0065FC;
-  padding-top: 10%;
+  padding-top: 60px;
 }
 
 .navlink {
@@ -42,6 +42,17 @@ header nav ul li {
 }
 
 /*  Intro + Recherche */
+
+
+#intro {
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.intro {
+  font-size: 2em;
+  padding-right: 30%;
+}
 
 .searchButton_desktop{
   display: none;
@@ -53,17 +64,15 @@ header nav ul li {
 
 .searchSystem {
   display: flex;
-  justify-content: center;
 }
 
 .searchBar {
-  padding: 15px 50px;
+  flex: 1;
 }
 .searchButton_mobile{
   display: block;
   background-color: #0065FC;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 15px;
   Color:white;
   cursor: pointer; 
   width: 47px;
@@ -81,6 +90,8 @@ header nav ul li {
 
 #filtre {
   display: block;
+  margin-right: 2%;
+  margin-left: 2%;
 }
 .filtreContainer {
   display: flex;
@@ -131,7 +142,9 @@ header nav ul li {
   height:auto ;
 }
 
-/*  Les plus populaires */
+.AfficherPlus {
+  position: static;
+}
 
 .TitrePopulaire {
   margin-bottom: 10%;
@@ -148,8 +161,9 @@ header nav ul li {
 }
 
 aside {
-  width: 100%;
+  width: 102%;
   border-radius: 0;
+  margin-left: -8px;
 }
 
 .hotelPopulaire {
@@ -191,6 +205,7 @@ aside {
 
 footer {
   flex-direction: column;
+  width: 100%;
 }
 
 .colonneFooter {
